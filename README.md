@@ -1,6 +1,7 @@
 # Void-Ai 🚀
 
 AI Chat APP
+
 An **ultra-modern, desktop AI companion** designed for developers, students, and everyday productivity. Powered by Python and PyQt6 with Fluent Design elements, Void-Ai delivers a fluid UI/UX for coding, learning, and conversation—completely powered by flexible free and open API providers.
 
 ---

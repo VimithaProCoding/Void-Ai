@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "providers": {
+    "Groq AI": {
+      "base_url": "https://api.groq.com/openai/v1",
+      "env_key": "GROQ_API_KEY"
+    },
+    "OpenRouter": {
+      "base_url": "https://openrouter.ai/api/v1",
+      "env_key": "OPENROUTER_API_KEY"
+    },
+    "Ollama Cloud": {
+      "base_url": "http://localhost:11434/v1",
+      "env_key": "OLLAMA_API_KEY"
+    }
+  },
+  "roles": {
+    "Fast": [
+      {
+        "provider": "Groq AI",
+        "model_id": "openai/gpt-oss-20b",
+        "model_name": "GPT OSS 20B",
+        "default": true
+      },
+      {
+        "provider": "Groq AI",
+        "model_id": "groq/compound-mini",
+        "model_name": "Compound Mini",
+        "default": false
+      },
+      {
+        "provider": "OpenRouter",
+        "model_id": "liquid/lfm-2.5-2.6b:free",
+        "model_name": "Liquid LFM 2.6B",
+        "default": false
+      }
+    ],
+    "Flash": [
+      {
+        "provider": "Groq AI",
+        "model_id": "qwen/qwen3.6-27b",
+        "model_name": "Qwen 3.6 27B",
+        "default": true
+      },
+      {
+        "provider": "OpenRouter",
+        "model_id": "liquid/lfm-2.5-2.6b:free",
+        "model_name": "Liquid LFM 2.6B",
+        "default": false
+      },
+      {
+        "provider": "OpenRouter",
+        "model_id": "cohere/north-mini-code:free",
+        "model_name": "Cohere North Mini Code",
+        "default": false
+      }
+    ],
+    "Complex": [
+      {
+        "provider": "Groq AI",
+        "model_id": "openai/gpt-oss-120b",
+        "model_name": "GPT OSS 120B",
+        "default": true
+      },
+      {
+        "provider": "OpenRouter",
+        "model_id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "model_name": "NVIDIA Nemotron 3 Ultra",
+        "default": false
+      },
+      {
+        "provider": "OpenRouter",
+        "model_id": "nvidia/nemotron-3.5-lightning:free",
+        "model_name": "NVIDIA Nemotron 3.5 Lightning",
+        "default": false
+      }
+    ]
+  },
+  "models": {
+    "Groq AI": [
+      {
+        "model_id": "openai/gpt-oss-20b",
+        "model_name": "GPT OSS 20B",
+        "provider": "Groq AI",
+        "default": true
+      },
+      {
+        "model_id": "groq/compound-mini",
+        "model_name": "Compound Mini",
+        "provider": "Groq AI",
+        "default": false
+      },
+      {
+        "model_id": "openai/gpt-oss-120b",
+        "model_name": "GPT OSS 120B",
+        "provider": "Groq AI",
+        "default": false
+      }
+    ],
+    "OpenRouter": [
+      {
+        "model_id": "liquid/lfm-2.5-2.6b:free",
+        "model_name": "Liquid LFM 2.6B",
+        "provider": "OpenRouter",
+        "default": true
+      },
+      {
+        "model_id": "cohere/north-mini-code:free",
+        "model_name": "Cohere North Mini Code",
+        "provider": "OpenRouter",
+        "default": false
+      },
+      {
+        "model_id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "model_name": "NVIDIA Nemotron 3 Ultra",
+        "provider": "OpenRouter",
+        "default": false
+      },
+      {
+        "model_id": "nvidia/nemotron-3.5-lightning:free",
+        "model_name": "NVIDIA Nemotron 3.5 Lightning",
+        "provider": "OpenRouter",
+        "default": false
+      }
+    ],
+    "Ollama Cloud": []
+  }
+}

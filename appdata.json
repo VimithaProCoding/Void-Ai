@@ -1,0 +1,75 @@
+{
+    "THEMES": {
+        "Neon Purple": {
+            "hex": "#9D4EDD",
+            "grad_start": "#C77DFF",
+            "grad_end": "#5A189A"
+        },
+        "Royal Gold": {
+            "hex": "#D4AF37",
+            "grad_start": "#F3E5AB",
+            "grad_end": "#996515"
+        },
+        "Emerald Green": {
+            "hex": "#00C853",
+            "grad_start": "#69F0AE",
+            "grad_end": "#007E33"
+        },
+        "Velvet Rose": {
+            "hex": "#FF4D6D",
+            "grad_start": "#FF758F",
+            "grad_end": "#A4133C"
+        }
+    },
+    "APP_STATE": {
+        "font_size": 13,
+        "bg_animation": true,
+        "stream_text": true,
+        "model_themes": {
+            "Fast": "Neon Purple",
+            "Flash": "Emerald Green",
+            "Complex": "Velvet Rose"
+        },
+        "selected_model_role": "Fast",
+        "auto_load_recent_chat": false,
+        "developer_options": false,
+        "last_chat_id": null,
+        "groq_api_keys_url": "https://console.groq.com/keys",
+        "home_card_prompts": {
+            "A Friend": [
+                "Talk about your day, share feelings, or just chat.",
+                "Always here to listen when you feel lonely.",
+                "Friendly conversations for any mood, anytime."
+            ],
+            "Dev Helper": [
+                "Build websites, apps, and write code easily.",
+                "Get clean and working code for your projects.",
+                "Create software from scratch with step-by-step code."
+            ],
+            "Learn Zone": [
+                "Learn coding, studies, and new skills easily.",
+                "Simple explanations for hard topics and lessons.",
+                "Ask questions and boost your knowledge every day."
+            ]
+        },
+        "prompt_mode_colors": {
+            "A Friend": "#FF4D6D",
+            "Dev Helper": "#00C853",
+            "Learn Zone": "#9D4EDD"
+        }
+    },
+    "MODEL_CONFIGS": {
+        "Fast": {
+            "provider": "Groq AI",
+            "model": "openai/gpt-oss-20b"
+        },
+        "Flash": {
+            "provider": "OpenRouter",
+            "model": "liquid/lfm-2.5-2.6b:free"
+        },
+        "Complex": {
+            "provider": "OpenRouter",
+            "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+        }
+    }
+}
